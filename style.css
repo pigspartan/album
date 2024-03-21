@@ -1,4 +1,4 @@
-.scale-up-center:click {
+.scale-up-center:active{
     transform: scale(5) translate(-50%,-50%);
     position: absolute;
     top: 50%;

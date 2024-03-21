@@ -1,0 +1,3 @@
+.scale-up-center:click {
+	animation: scale-up-center 1s linear both;
+}

@@ -1,4 +1,4 @@
 .scale-up-center:hover {
-    transform: scale(1.5) translate(50%,50%);
+    transform: scale(1.5) translate(-50%,-50%);
     
 }

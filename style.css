@@ -1,4 +1,4 @@
-.scale-up-center:hover{
+.scale-up-center:active{
     transform: scale(5);
     position: absolute;
     top: 50%;

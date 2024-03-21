@@ -1,7 +1,4 @@
 .scale-up-center:hover {
-	-moz-transform: scale(1.5) rotate(360deg);
--webkit-transform: scale(1.5) rotate(360deg);
--o-transform: scale(1.5) rotate(360deg);
--ms-transform: scale(1.5) rotate(360deg);
-transform: scale(1.5) rotate(360deg);
+    transform: scale(1.5) translate(50%,50%);
+    
 }

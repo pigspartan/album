@@ -1,29 +1,7 @@
-
-:root {
-    --x: window.innerWidth / 2;
-    --y :window.innerHeight / 2;
-    --x1:0;
-    --y1:0;
-}
-
-
-
-@keyframes main {
-0% {
-
-    scale:1;
-
-  }
-to{
-  position: absolute;
-   scale:5;
-   translate:500%;
-  }
-}
-
-
-
-/* .scale-up-center:active{
+.scale-up-center:active{
     
-    animation: rotate-scale-up 0.65s linear both;
-} */
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: scale(5) translate(-50%);
+}

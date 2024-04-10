@@ -58,17 +58,54 @@ function wykres(grubosc,okres,amp) {
             }) 
   }
   function zad3(){
-             var canvas = document.getElementById('zad3');
+            var canvas = document.getElementById('zad3');
             var ctx = canvas.getContext('2d');
             canvas.width = 800;
             canvas.height = 600;
-            
             ctx.beginPath();
-            ctx.fillroundRect(10, 20, 150, 100, [40]);
+            const grad=ctx.createLinearGradient(0,0, 150,0);
+            grad.addColorStop(0, "lightblue");
+            grad.addColorStop(1, "darkblue");
+            ctx.fillStyle = grad;
+            ctx.roundRect(10, 20, 150, 100, [40]);
+            ctx.fill();
             ctx.stroke();
   }
+  function zad4(ile,r1,r2){
+    var x1= 160;
+    var y1= 160;
+    var r = r1;
+    var canvas = document.getElementById("zad4");
+    var context = canvas.getContext("2d");
+    canvas.width = 800;
+    canvas.height = 600;
+    context.beginPath();
+    context.fillStyle = "blue";
+    context.strokeStyle = "black";
+    for (var i = 0; i < ile; i++) {
+        var alpha = ((Math.PI * 2) / ile) * (i); //aktualny kąt
+        if (i % 2 == 0) {
+        if (r == r1)
+        r = r2;
+        else
+        r = r1;
+        }
+        var x = (r * Math.sin(alpha)) + x1;
+        var y = (r * Math.cos(alpha)) + y1;
+        if (i == 0)
+        context.moveTo(x, y);
+        else
+        context.lineTo(x, y);
+        }
+    context.fill();
+    context.stroke()    
+    }
+
+
+
   window.onload = function () {
     wykres(5,200,100) ;
     kolowy(tab);
     zad3();
+    zad4(52,100,150);
     }; 
